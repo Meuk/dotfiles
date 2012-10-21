@@ -13,8 +13,8 @@ I'm biased towards Ruby, ZSH, tmux, Git and VIM so most configurations should be
 
 Installation
 ------------
- * Begin by cloning this repository somewhere on your machine, for example ~/dotfiles.
- * `rake install`
+ * `\curl -L https://raw.github.com/Mange/dotfiles/master/bootstrap.sh | bash`
+ * Follow the instructions.
  * You're done!
 
 Any files found conflicting will be backed up. Check the output of the installer.

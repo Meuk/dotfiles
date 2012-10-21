@@ -111,5 +111,8 @@ fi
 
 if [[ ! -e $dotfiles_dir ]]; then
   installation_message "dotfiles"
+  set -e
   git clone git@github.com:Mange/dotfiles.git $dotfiles_dir
+  echo "Installed to $dotfiles_dir. To continue:"
+  echo "zsh -c \"cd $dotfiles_dir && rake install\" && exec zsh"
 fi
