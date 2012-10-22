@@ -45,7 +45,9 @@ else
 fi
 
 function installation_message {
-  echo -e "\e[33m===== Installing $1...\e[0m"
+  # \e is not portable between Linux and Mac. Mac bash wants to use \E instead.
+  # (Cuz Apple hates you.)
+  echo -e "\033[33m===== Installing $1...\033[0m"
 }
 
 function debian_install {
